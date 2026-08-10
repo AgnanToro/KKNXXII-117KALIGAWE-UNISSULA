@@ -10,33 +10,154 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as GaleriRouteImport } from './routes/galeri'
+import { Route as KegiatanRouteImport } from './routes/kegiatan'
+import { Route as KontakRouteImport } from './routes/kontak'
+import { Route as ProfilRouteImport } from './routes/profil'
+import { Route as ProgramKerjaIndexRouteImport } from './routes/program-kerja.index'
+import { Route as ProgramKerjaPemetaanRw3RouteImport } from './routes/program-kerja.pemetaan-rw3'
+import { Route as ProgramKerjaStuntingRouteImport } from './routes/program-kerja.stunting'
+import { Route as ProgramKerjaTogaRouteImport } from './routes/program-kerja.toga'
+import { Route as ProgramKerjaTpqRouteImport } from './routes/program-kerja.tpq'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GaleriRoute = GaleriRouteImport.update({
+  id: '/galeri',
+  path: '/galeri',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KegiatanRoute = KegiatanRouteImport.update({
+  id: '/kegiatan',
+  path: '/kegiatan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KontakRoute = KontakRouteImport.update({
+  id: '/kontak',
+  path: '/kontak',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProfilRoute = ProfilRouteImport.update({
+  id: '/profil',
+  path: '/profil',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgramKerjaIndexRoute = ProgramKerjaIndexRouteImport.update({
+  id: '/program-kerja/',
+  path: '/program-kerja/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgramKerjaPemetaanRw3Route = ProgramKerjaPemetaanRw3RouteImport.update({
+  id: '/program-kerja/pemetaan-rw3',
+  path: '/program-kerja/pemetaan-rw3',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgramKerjaStuntingRoute = ProgramKerjaStuntingRouteImport.update({
+  id: '/program-kerja/stunting',
+  path: '/program-kerja/stunting',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgramKerjaTogaRoute = ProgramKerjaTogaRouteImport.update({
+  id: '/program-kerja/toga',
+  path: '/program-kerja/toga',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgramKerjaTpqRoute = ProgramKerjaTpqRouteImport.update({
+  id: '/program-kerja/tpq',
+  path: '/program-kerja/tpq',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/galeri': typeof GaleriRoute
+  '/kegiatan': typeof KegiatanRoute
+  '/kontak': typeof KontakRoute
+  '/profil': typeof ProfilRoute
+  '/program-kerja/pemetaan-rw3': typeof ProgramKerjaPemetaanRw3Route
+  '/program-kerja/stunting': typeof ProgramKerjaStuntingRoute
+  '/program-kerja/toga': typeof ProgramKerjaTogaRoute
+  '/program-kerja/tpq': typeof ProgramKerjaTpqRoute
+  '/program-kerja/': typeof ProgramKerjaIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/galeri': typeof GaleriRoute
+  '/kegiatan': typeof KegiatanRoute
+  '/kontak': typeof KontakRoute
+  '/profil': typeof ProfilRoute
+  '/program-kerja/pemetaan-rw3': typeof ProgramKerjaPemetaanRw3Route
+  '/program-kerja/stunting': typeof ProgramKerjaStuntingRoute
+  '/program-kerja/toga': typeof ProgramKerjaTogaRoute
+  '/program-kerja/tpq': typeof ProgramKerjaTpqRoute
+  '/program-kerja': typeof ProgramKerjaIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/galeri': typeof GaleriRoute
+  '/kegiatan': typeof KegiatanRoute
+  '/kontak': typeof KontakRoute
+  '/profil': typeof ProfilRoute
+  '/program-kerja/pemetaan-rw3': typeof ProgramKerjaPemetaanRw3Route
+  '/program-kerja/stunting': typeof ProgramKerjaStuntingRoute
+  '/program-kerja/toga': typeof ProgramKerjaTogaRoute
+  '/program-kerja/tpq': typeof ProgramKerjaTpqRoute
+  '/program-kerja/': typeof ProgramKerjaIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/galeri'
+    | '/kegiatan'
+    | '/kontak'
+    | '/profil'
+    | '/program-kerja/pemetaan-rw3'
+    | '/program-kerja/stunting'
+    | '/program-kerja/toga'
+    | '/program-kerja/tpq'
+    | '/program-kerja/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/galeri'
+    | '/kegiatan'
+    | '/kontak'
+    | '/profil'
+    | '/program-kerja/pemetaan-rw3'
+    | '/program-kerja/stunting'
+    | '/program-kerja/toga'
+    | '/program-kerja/tpq'
+    | '/program-kerja'
+  id:
+    | '__root__'
+    | '/'
+    | '/galeri'
+    | '/kegiatan'
+    | '/kontak'
+    | '/profil'
+    | '/program-kerja/pemetaan-rw3'
+    | '/program-kerja/stunting'
+    | '/program-kerja/toga'
+    | '/program-kerja/tpq'
+    | '/program-kerja/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  GaleriRoute: typeof GaleriRoute
+  KegiatanRoute: typeof KegiatanRoute
+  KontakRoute: typeof KontakRoute
+  ProfilRoute: typeof ProfilRoute
+  ProgramKerjaPemetaanRw3Route: typeof ProgramKerjaPemetaanRw3Route
+  ProgramKerjaStuntingRoute: typeof ProgramKerjaStuntingRoute
+  ProgramKerjaTogaRoute: typeof ProgramKerjaTogaRoute
+  ProgramKerjaTpqRoute: typeof ProgramKerjaTpqRoute
+  ProgramKerjaIndexRoute: typeof ProgramKerjaIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +169,83 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/galeri': {
+      id: '/galeri'
+      path: '/galeri'
+      fullPath: '/galeri'
+      preLoaderRoute: typeof GaleriRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kegiatan': {
+      id: '/kegiatan'
+      path: '/kegiatan'
+      fullPath: '/kegiatan'
+      preLoaderRoute: typeof KegiatanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kontak': {
+      id: '/kontak'
+      path: '/kontak'
+      fullPath: '/kontak'
+      preLoaderRoute: typeof KontakRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/profil': {
+      id: '/profil'
+      path: '/profil'
+      fullPath: '/profil'
+      preLoaderRoute: typeof ProfilRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/program-kerja/': {
+      id: '/program-kerja/'
+      path: '/program-kerja'
+      fullPath: '/program-kerja/'
+      preLoaderRoute: typeof ProgramKerjaIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/program-kerja/pemetaan-rw3': {
+      id: '/program-kerja/pemetaan-rw3'
+      path: '/program-kerja/pemetaan-rw3'
+      fullPath: '/program-kerja/pemetaan-rw3'
+      preLoaderRoute: typeof ProgramKerjaPemetaanRw3RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/program-kerja/stunting': {
+      id: '/program-kerja/stunting'
+      path: '/program-kerja/stunting'
+      fullPath: '/program-kerja/stunting'
+      preLoaderRoute: typeof ProgramKerjaStuntingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/program-kerja/toga': {
+      id: '/program-kerja/toga'
+      path: '/program-kerja/toga'
+      fullPath: '/program-kerja/toga'
+      preLoaderRoute: typeof ProgramKerjaTogaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/program-kerja/tpq': {
+      id: '/program-kerja/tpq'
+      path: '/program-kerja/tpq'
+      fullPath: '/program-kerja/tpq'
+      preLoaderRoute: typeof ProgramKerjaTpqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  GaleriRoute: GaleriRoute,
+  KegiatanRoute: KegiatanRoute,
+  KontakRoute: KontakRoute,
+  ProfilRoute: ProfilRoute,
+  ProgramKerjaPemetaanRw3Route: ProgramKerjaPemetaanRw3Route,
+  ProgramKerjaStuntingRoute: ProgramKerjaStuntingRoute,
+  ProgramKerjaTogaRoute: ProgramKerjaTogaRoute,
+  ProgramKerjaTpqRoute: ProgramKerjaTpqRoute,
+  ProgramKerjaIndexRoute: ProgramKerjaIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
