@@ -6,6 +6,9 @@ import logo from "@/assets/logo/logo-117.jpg";
 import { Blob, Halftone, LeafShape, Sun } from "@/components/Decor";
 import Reveal from "@/components/Reveal";
 import SectionTitle from "@/components/SectionTitle";
+import TeamSection from "@/components/TeamSection";
+import { teamCover } from "@/data/team";
+
 
 const identitas = [
   { label: "Program", value: "KKN Tematik XXII" },
