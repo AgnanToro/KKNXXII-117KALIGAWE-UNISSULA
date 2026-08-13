@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, MapPin } from "lucide-react";
 
 import heroImg from "@/assets/images/hero-community.jpg";
-import logo from "@/assets/logo/logo-117.png";
+import logo from "@/assets/logo/logo-117.jpg";
 import { Blob, Cloud, Halftone, HalftoneWarm, LeafShape, Sun } from "./Decor";
 
 export default function Hero() {

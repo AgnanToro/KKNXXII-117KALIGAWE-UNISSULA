@@ -1,7 +1,12 @@
+import kelompokImg from "@/assets/images/kelompok.jpg";
+import kerjaBaktiImg from "@/assets/images/kerja-bakti.jpg";
+import sosialImg from "@/assets/images/sosial.jpg";
 import ActivityCard from "@/components/ActivityCard";
 import { Blob, Halftone, LeafShape } from "@/components/Decor";
+import Reveal from "@/components/Reveal";
 import SectionTitle from "@/components/SectionTitle";
 import { activities } from "@/data/activities";
+
 
 export default function Kegiatan() {
   return (
@@ -38,14 +43,37 @@ export default function Kegiatan() {
 
       <section className="relative overflow-hidden bg-cream py-16 sm:py-20">
         <Halftone className="inset-0 h-full w-full" />
-        <div className="relative mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8">
+        <div className="relative mx-auto grid w-full max-w-[1280px] items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <SectionTitle
             eyebrow="Catatan"
             title="Dokumentasi kegiatan terus diperbarui"
-            subtitle="Kegiatan tambahan lain akan ditambahkan pada halaman ini seiring berjalannya masa pengabdian. [PLACEHOLDER — tambahkan kegiatan baru pada src/data/activities.ts]"
+            subtitle="Kegiatan tambahan lain akan ditambahkan pada halaman ini seiring berjalannya masa pengabdian."
           />
+          <Reveal delay={80}>
+            <div className="grid grid-cols-2 gap-4">
+              <img
+                src={kelompokImg}
+                alt="Kebersamaan Kelompok 117 bersama warga Kaligawe"
+                loading="lazy"
+                className="col-span-2 aspect-16/9 w-full rounded-[2rem] border border-primary/30 object-cover"
+              />
+              <img
+                src={kerjaBaktiImg}
+                alt="Kerja bakti bersama warga"
+                loading="lazy"
+                className="aspect-4/3 w-full rounded-2xl border border-primary/30 object-cover"
+              />
+              <img
+                src={sosialImg}
+                alt="Kegiatan sosial bersama masyarakat"
+                loading="lazy"
+                className="aspect-4/3 w-full rounded-2xl border border-primary/30 object-cover"
+              />
+            </div>
+          </Reveal>
         </div>
       </section>
+
     </>
   );
 }

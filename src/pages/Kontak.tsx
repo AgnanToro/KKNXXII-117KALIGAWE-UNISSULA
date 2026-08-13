@@ -1,6 +1,6 @@
 import { MapPin } from "lucide-react";
 
-import logo from "@/assets/logo/logo-117.png";
+import logo from "@/assets/logo/logo-117.jpg";
 import { Blob, Halftone, LeafShape, Sun } from "@/components/Decor";
 import Reveal from "@/components/Reveal";
 import SectionTitle from "@/components/SectionTitle";

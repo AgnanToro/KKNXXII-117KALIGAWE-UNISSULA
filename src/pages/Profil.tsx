@@ -2,10 +2,13 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, HeartHandshake, Leaf, MapPin, Users } from "lucide-react";
 
 import kelompokImg from "@/assets/images/kelompok.jpg";
-import logo from "@/assets/logo/logo-117.png";
+import logo from "@/assets/logo/logo-117.jpg";
 import { Blob, Halftone, LeafShape, Sun } from "@/components/Decor";
 import Reveal from "@/components/Reveal";
 import SectionTitle from "@/components/SectionTitle";
+import TeamSection from "@/components/TeamSection";
+import { teamCover } from "@/data/team";
+
 
 const identitas = [
   { label: "Program", value: "KKN Tematik XXII" },
@@ -80,8 +83,8 @@ export default function Profil() {
             />
             <Reveal delay={100}>
               <p className="mt-6 rounded-2xl border border-dashed border-primary/40 bg-cream px-5 py-4 text-sm text-muted-foreground">
-                [PLACEHOLDER] Tambahkan daftar anggota kelompok, dosen pembimbing lapangan, dan
-                program studi di bagian ini jika data sudah tersedia.
+                Struktur kepengurusan Kelompok 117 dapat dilihat pada bagian Struktur Kelompok di
+                bawah. [PLACEHOLDER] Data dosen pembimbing lapangan akan ditambahkan menyusul.
               </p>
               <Link
                 to="/program-kerja"
@@ -91,6 +94,7 @@ export default function Profil() {
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </Reveal>
+
           </div>
 
           <Reveal delay={80}>
@@ -111,6 +115,31 @@ export default function Profil() {
           </Reveal>
         </div>
       </section>
+
+      {/* STRUKTUR KELOMPOK */}
+      <section className="relative overflow-hidden bg-cream py-16 sm:py-24">
+        <Blob className="-right-24 top-16 h-72 w-72 opacity-40" />
+        <LeafShape className="-left-10 bottom-10 h-40 w-40 opacity-30" />
+        <div className="relative mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8">
+          <SectionTitle
+            eyebrow="Meet Our Team"
+            title="Struktur Kelompok 117"
+            subtitle="Urut dari Badan Pengurus Harian hingga divisi Perkap. Beberapa foto anggota masih menyusul dan akan diperbarui pada src/data/team.ts."
+            align="center"
+          />
+          <Reveal delay={80}>
+            <img
+              src={teamCover}
+              alt="Meet Our Team — KKN Kelompok 117 Kaligawe"
+              loading="lazy"
+              className="mx-auto mt-10 w-full max-w-3xl rounded-[2rem] border border-primary/30 object-cover"
+            />
+          </Reveal>
+          <TeamSection />
+        </div>
+      </section>
+
+
 
       {/* TEMPAT KAMI MENGABDI */}
       <section className="relative overflow-hidden bg-cream-deep py-16 sm:py-20">
