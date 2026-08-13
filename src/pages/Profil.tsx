@@ -80,8 +80,8 @@ export default function Profil() {
             />
             <Reveal delay={100}>
               <p className="mt-6 rounded-2xl border border-dashed border-primary/40 bg-cream px-5 py-4 text-sm text-muted-foreground">
-                [PLACEHOLDER] Tambahkan daftar anggota kelompok, dosen pembimbing lapangan, dan
-                program studi di bagian ini jika data sudah tersedia.
+                Struktur kepengurusan Kelompok 117 dapat dilihat pada bagian Struktur Kelompok di
+                bawah. [PLACEHOLDER] Data dosen pembimbing lapangan akan ditambahkan menyusul.
               </p>
               <Link
                 to="/program-kerja"
@@ -91,6 +91,7 @@ export default function Profil() {
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </Reveal>
+
           </div>
 
           <Reveal delay={80}>
