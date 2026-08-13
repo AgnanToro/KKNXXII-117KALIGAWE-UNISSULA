@@ -7,7 +7,6 @@ import { Blob, Halftone, LeafShape, Sun } from "@/components/Decor";
 import Reveal from "@/components/Reveal";
 import SectionTitle from "@/components/SectionTitle";
 import TeamSection from "@/components/TeamSection";
-import { teamCover } from "@/data/team";
 
 
 const identitas = [
@@ -124,17 +123,9 @@ export default function Profil() {
           <SectionTitle
             eyebrow="Meet Our Team"
             title="Struktur Kelompok 117"
-            subtitle="Urut dari Badan Pengurus Harian hingga divisi Perkap. Beberapa foto anggota masih menyusul dan akan diperbarui pada src/data/team.ts."
+            subtitle="Urut dari Dosen Pembimbing Lapangan, Badan Pengurus Harian, hingga divisi Perkap."
             align="center"
           />
-          <Reveal delay={80}>
-            <img
-              src={teamCover}
-              alt="Meet Our Team — KKN Kelompok 117 Kaligawe"
-              loading="lazy"
-              className="mx-auto mt-10 w-full max-w-3xl rounded-[2rem] border border-primary/30 object-cover"
-            />
-          </Reveal>
           <TeamSection />
         </div>
       </section>
