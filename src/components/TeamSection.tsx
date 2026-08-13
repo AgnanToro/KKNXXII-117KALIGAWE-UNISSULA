@@ -51,7 +51,7 @@ function ImageTile({ src, alt }: { src: string; alt: string }) {
   );
 }
 
-function PlaceholderTile({ title, caption }: { title: string; caption?: string }) {
+function PlaceholderTile({ title, caption }: { title: string; caption?: string | undefined }) {
   return (
     <div className="h-full overflow-hidden rounded-2xl border border-primary/30 bg-cream-deep">
       <div className="halftone flex h-full min-h-[280px] flex-col items-center justify-center gap-2 px-6 py-10 text-center">
