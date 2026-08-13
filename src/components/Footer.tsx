@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin } from "lucide-react";
 
-import logo from "@/assets/logo/logo-117.png";
+import logo from "@/assets/logo/logo-117.jpg";
 import { Halftone, LeafShape } from "./Decor";
 import SocialLinks from "./SocialLinks";
 

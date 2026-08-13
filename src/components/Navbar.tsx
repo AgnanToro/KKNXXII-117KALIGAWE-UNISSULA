@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
-import logo from "@/assets/logo/logo-117.png";
+import logo from "@/assets/logo/logo-117.jpg";
 
 const links = [
   { to: "/", label: "Beranda" },

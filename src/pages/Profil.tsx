@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, HeartHandshake, Leaf, MapPin, Users } from "lucide-react";
 
 import kelompokImg from "@/assets/images/kelompok.jpg";
-import logo from "@/assets/logo/logo-117.png";
+import logo from "@/assets/logo/logo-117.jpg";
 import { Blob, Halftone, LeafShape, Sun } from "@/components/Decor";
 import Reveal from "@/components/Reveal";
 import SectionTitle from "@/components/SectionTitle";
