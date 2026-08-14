@@ -268,7 +268,7 @@ export default function ProgramDetail({ program }: { program: Program }) {
                 </figure>
               </Reveal>
             ))}
-          </div>
+          </div>       
         </div>
       </section>
 
@@ -291,23 +291,12 @@ export default function ProgramDetail({ program }: { program: Program }) {
                 </div>
               </Reveal>
             ))}
+            
           </div>
-          <div className="mt-12">
-            <Link
-              to="/program-kerja"
-              className="inline-flex items-center gap-3 rounded-full border border-cream/30 px-5 py-3 text-sm font-bold text-cream transition-all duration-300 hover:-translate-y-0.5 hover:border-secondary hover:text-secondary"
-            >
-              ← Kembali ke Program Kerja
-            </Link>
-          </div>
+
         </div>
       </section>
 
-      <div className="bg-paper py-12">
-        <div className="mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8">
-          <BackButton />
-        </div>
-      </div>
     </>
   );
 }

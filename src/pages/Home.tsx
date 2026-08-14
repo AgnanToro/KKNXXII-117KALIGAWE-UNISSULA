@@ -1,8 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, MapPin } from "lucide-react";
 
-import aboutImg from "@/assets/images/kelompok.jpg";
-import mapImg from "@/assets/images/peta-rw3.jpg";
+import aboutImg from "@/assets/images/kelompok.webp";
+import mapImg from "@/assets/images/peta-rw3.webp";
 import ActivityCard from "@/components/ActivityCard";
 import { Blob, Halftone, LeafShape, Sun, Ticker } from "@/components/Decor";
 import GalleryCard from "@/components/GalleryCard";
@@ -152,7 +152,7 @@ export default function Home() {
                 </span>
               </div>
               <p className="px-2 pb-1 pt-3 text-xs text-muted-foreground">
-                Ilustrasi visual lokasi — placeholder, mudah diganti dengan peta asli.
+                Tempat kami mengabdi selama KKN.
               </p>
             </div>
           </Reveal>

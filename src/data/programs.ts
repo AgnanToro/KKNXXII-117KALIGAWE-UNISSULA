@@ -1,12 +1,34 @@
 import { BookOpen, MapPin, Leaf, HeartPulse, type LucideIcon } from "lucide-react";
 
-import tpqImg from "@/assets/images/tpq.jpg";
-import pemetaanImg from "@/assets/images/pemetaan.jpg";
-import togaImg from "@/assets/images/toga.jpg";
-import stuntingImg from "@/assets/images/stunting.jpg";
-import petaImg from "@/assets/images/peta-rw3.jpg";
+import tpqImg from "@/assets/images/tpq.webp";
+import tpq2Img from "@/assets/images/tpq2.webp";
+import tpq3Img from "@/assets/images/tpq3.webp";
+import tpq4Img from "@/assets/images/tpq4.webp";
+import tpq5Img from "@/assets/images/tpq5.webp";
+import tpq6Img from "@/assets/images/tpq6.webp";
+
+import pemetaanImg from "@/assets/images/peta.webp";
+import pemetaan2Img from "@/assets/images/petaaaa2.jpg";
+import pemetaan3Img from "@/assets/images/petaaa2.webp";
+import pemetaan4Img from "@/assets/images/peta1.webp";
+import togaImg from "@/assets/images/toga.webp";
+
+import stuntingImg from "@/assets/images/stunting.webp";
+import stunting2Img from "@/assets/images/stunting2.webp";
+import stunting3Img from "@/assets/images/stunting3.webp";
+
+import petaImg from "@/assets/images/peta-rw3.webp";
 import mintImg from "@/assets/images/mint.jpg";
 import kumisImg from "@/assets/images/kumis-kucing.jpg";
+import togart01Img from "@/assets/images/RT1.webp";
+import togart02Img from "@/assets/images/RT2.webp";
+import togart03Img from "@/assets/images/RT3.webp";
+import togart04Img from "@/assets/images/RT4.webp";
+import togart05Img from "@/assets/images/RT5.webp";
+import togart06Img from "@/assets/images/RT6.webp";
+import togart07Img from "@/assets/images/RT7.webp";
+import togart08Img from "@/assets/images/RT8.webp";
+import togart09Img from "@/assets/images/RT9.webp";
 
 export type Program = {
   id: string;
@@ -72,9 +94,12 @@ export const programs: Program[] = [
     ],
     target: "Anak-anak TPQ di wilayah Kaligawe.",
     documentation: [
-      { src: tpqImg, caption: "Pendampingan membaca Al-Qur'an" },
-      { src: tpqImg, caption: "Belajar bersama anak-anak TPQ" },
-      { src: tpqImg, caption: "Aktivitas edukatif di TPQ" },
+      { src: tpq2Img, caption: "Pendampingan membaca Al-Qur'an" },
+      { src: tpq3Img, caption: "Belajar bersama anak-anak TPQ" },
+      { src: tpq4Img, caption: "Pengenalan di TPQ bersama Pak RW 3 Kaligawe" },
+      { src: tpq5Img, caption: "Lomba Day 1 di TPQ" },
+      { src: tpq6Img, caption: "Lomba day 2 di TPQ" },
+      { src: tpqImg, caption: "Penutupan Pembelajaran di TPQ" },
     ],
     impact: [
       {
@@ -126,7 +151,7 @@ export const programs: Program[] = [
     activities: [
       "Survey wilayah bersama warga",
       "Pengumpulan data lapangan",
-      "Penyusunan draf peta",
+      "Penyusunan peta wilayah RW 3",
       "Finalisasi dan penyerahan peta",
     ],
     target: "Warga RW 3 Kelurahan Kaligawe.",
@@ -138,14 +163,15 @@ export const programs: Program[] = [
       { step: "05", title: "Finalisasi", text: "Menyempurnakan peta dan menyerahkannya kepada warga." },
     ],
     result: {
-      image: petaImg,
-      caption: "Ilustrasi hasil peta wilayah — placeholder, ganti dengan peta final",
+      image: pemetaan2Img,
+      caption: "Hasil peta wilayah RW 3 Kaligawe",
       text: "Peta wilayah RW 3 disusun sebagai media informasi dan dokumentasi. Gambar pada halaman ini merupakan placeholder ilustrasi dan dapat diganti dengan hasil peta final.",
     },
     documentation: [
-      { src: pemetaanImg, caption: "Survey wilayah RW 3" },
-      { src: petaImg, caption: "Penyusunan draf peta" },
-      { src: pemetaanImg, caption: "Pendataan bersama warga" },
+
+      { src: pemetaan3Img, caption: "Proses Pemasangan Peta Wilayah RW 3" },
+      { src: pemetaan4Img, caption: "Penyusunan kerangka peta" },
+      { src: pemetaanImg, caption: "Hasil Peta wilayah RW 3" },
     ],
     impact: [
       { title: "Informasi Wilayah", text: "Warga memiliki media informasi wilayah yang mudah dibaca." },
@@ -202,6 +228,15 @@ export const programs: Program[] = [
       { src: togaImg, caption: "Penanaman di taman TOGA" },
       { src: mintImg, caption: "Bibit mint" },
       { src: kumisImg, caption: "Tanaman kumis kucing" },
+      { src: togart01Img, caption: "Pemberian tanaman toga di Taman Toga RT 01" },
+      { src: togart02Img, caption: "Pemberian tanaman toga di Taman Toga RT 02" },
+      { src: togart03Img, caption: "Pemberian tanaman toga di Taman Toga RT 03" },
+      { src: togart04Img, caption: "Pemberian tanaman toga di Taman Toga RT 04" },
+      { src: togart05Img, caption: "Pemberian tanaman toga di Taman Toga RT 05" },
+      { src: togart06Img, caption: "Pemberian tanaman toga di Taman Toga RT 06" },
+      { src: togart07Img, caption: "Pemberian tanaman toga di Taman Toga RT 07" },
+      { src: togart08Img, caption: "Pemberian tanaman toga di Taman Toga RT 08" },
+      { src: togart09Img, caption: "Pemberian tanaman toga di Taman Toga RT 09" },
     ],
     impact: [
       { title: "Pemanfaatan Ruang", text: "Taman TOGA di setiap RT kembali dimanfaatkan secara aktif." },
@@ -242,12 +277,12 @@ export const programs: Program[] = [
     ],
     target: "Ibu-ibu PKK dan masyarakat Kelurahan Kaligawe.",
     execution:
-      "Penyuluhan dilaksanakan bersama ibu-ibu PKK di Kelurahan Kaligawe. Detail waktu dan lokasi pelaksanaan belum tersedia — silakan lengkapi pada bagian ini.",
-    schedule: "Waktu & lokasi: [PLACEHOLDER — lengkapi jika data sudah tersedia]",
+      "Penyuluhan dilaksanakan bersama ibu-ibu PKK RW 03 Kelurahan Kaligawe.",
+    schedule: "Waktu & lokasi:Jumat, 7 Agustus 2026 — Rumah ibu RW 03",
     documentation: [
       { src: stuntingImg, caption: "Pemaparan materi penyuluhan" },
-      { src: stuntingImg, caption: "Diskusi bersama ibu-ibu PKK" },
-      { src: stuntingImg, caption: "Suasana kegiatan penyuluhan" },
+      { src: stunting2Img, caption: "Diskusi bersama ibu-ibu PKK" },
+      { src: stunting3Img, caption: "Pemberian gift " },
     ],
     impact: [
       { title: "Pemahaman Meningkat", text: "Peserta lebih mengenal stunting dan cara pencegahannya." },

@@ -71,7 +71,7 @@ export default function Kontak() {
           <SectionTitle
             eyebrow="Media Sosial"
             title="Ikuti Perjalanan KKN Kami"
-            subtitle="Dokumentasi kegiatan harian Kelompok 117 dibagikan melalui media sosial. URL berikut masih placeholder dan mudah diganti."
+            subtitle="Dokumentasi kegiatan harian Kelompok 117 dibagikan melalui media sosial."
           />
           <Reveal delay={100} className="mt-8">
             <SocialLinks variant="outline" showHandle />

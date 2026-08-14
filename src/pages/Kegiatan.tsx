@@ -1,6 +1,6 @@
-import kelompokImg from "@/assets/images/kelompok.jpg";
-import kerjaBaktiImg from "@/assets/images/kerja-bakti.jpg";
-import sosialImg from "@/assets/images/sosial.jpg";
+import kelompokImg from "@/assets/images/kelompok.webp";
+import kerjaBaktiImg from "@/assets/images/kerja-bakti.webp";
+import sosialImg from "@/assets/images/sosial.webp";
 import ActivityCard from "@/components/ActivityCard";
 import { Blob, Halftone, LeafShape } from "@/components/Decor";
 import Reveal from "@/components/Reveal";

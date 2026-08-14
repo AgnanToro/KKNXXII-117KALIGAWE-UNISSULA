@@ -6,14 +6,14 @@ import { FaInstagram, FaTiktok } from "react-icons/fa6";
 export const socials = [
   {
     label: "Instagram",
-    handle: "@kkn117kaligawe",
-    href: "https://instagram.com/",
+    handle: "117.kknkaligawe",
+    href: "https://www.instagram.com/117.kknkaligawe/",
     Icon: FaInstagram,
   },
   {
     label: "TikTok",
-    handle: "@kkn117kaligawe",
-    href: "https://tiktok.com/",
+    handle: "117.kknkaligawe",
+    href: "https://tiktok.com/@117.kknkaligawe/",
     Icon: FaTiktok,
   },
 ];
